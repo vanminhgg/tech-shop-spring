@@ -1,7 +1,6 @@
 package com.techstore.techstore.model;
 
 import jakarta.persistence.*;
-import org.hibernate.annotations.ManyToAny;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -30,7 +29,5 @@ public class Category {
 
     @ManyToMany(mappedBy = "categories")
     private Set<Brand> brands = new LinkedHashSet<>();
-
-    
 
 }
