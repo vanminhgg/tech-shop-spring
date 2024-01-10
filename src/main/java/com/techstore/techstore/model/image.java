@@ -2,7 +2,6 @@ package com.techstore.techstore.model;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.stereotype.Component;
 
 @Getter
 @Setter
@@ -19,5 +18,5 @@ public class image {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "ProductId")
     private Product product;
-    private  String url;
+    private String url;
 }

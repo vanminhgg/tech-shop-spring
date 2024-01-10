@@ -2,11 +2,8 @@ package com.techstore.techstore.model;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 @Entity
 @Table(name = "Product")
@@ -29,7 +26,7 @@ public class Product {
     private String CPU;
     private String ram;
     private String rom;
-    private String VGA ;
+    private String VGA;
     private String display;
     private String battery;
     private String OS;
@@ -46,6 +43,5 @@ public class Product {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "BrandId")
     private Brand brand;
-
 
 }
